@@ -20,7 +20,7 @@ function add_facebook_thumbnail_to_head () {
     }
 
     // get the thumbnail URL
-    $the_thumbnail_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' )[0];
+    $the_thumbnail_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' )[0];
 
     // render it, if available
     if ( $the_thumbnail_url ) {
